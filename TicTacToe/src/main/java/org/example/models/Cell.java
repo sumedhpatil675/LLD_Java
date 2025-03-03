@@ -7,6 +7,14 @@ public class Cell {
         private CellStatus cellStatus;
         private Player player;
 
+    public Cell(Cell cell)
+    {
+        this.row = cell.getRow();
+        this.col = cell.getCol();
+        this.cellStatus = cell.getCellStatus();
+        this.player = cell.getPlayer();
+    }
+
         public Cell(int row,int col)
         {
             this.row = row;

@@ -22,22 +22,22 @@ public class Board {
         }
     }
 
-    public void display()
-    {
-        for(int i=0;i<board.size();i++)
-        {
-            for(int j=0;j<board.size();j++)
-            {
-                if(board.get(i).get(j).getCellStatus().equals(CellStatus.EMPTY))
-                {
-                    System.out.println("|  |");
-                }else
-                {
-                    System.out.printf(" | %s |",board.get(i).get(j).getPlayer().getSymbol());
-                }
-            }
-        }
-    }
+//    public void display()
+//    {
+//        for(int i=0;i<board.size();i++)
+//        {
+//            for(int j=0;j<board.size();j++)
+//            {
+//                if(board.get(i).get(j).getCellStatus().equals(CellStatus.EMPTY))
+//                {
+//                    System.out.println("|  |");
+//                }else
+//                {
+//                    System.out.printf(" | %s |",board.get(i).get(j).getPlayer().getSymbol());
+//                }
+//            }
+//        }
+//    }
 
     public List<List<Cell>> getBoard() {
         return board;
